@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package problema01;
+package problema03;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author santy
  */
-public class Problema01 {
+public class Problema03 {
 
     /**
      * @param args the command line arguments
@@ -20,19 +20,19 @@ public class Problema01 {
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
         
-        double base;
-        double alto;
-        double area;
+        double costoMin;
+        int mins;
+        double total;
         
-        System.out.println("Ingrese la base del triángulo:");
-        base = entrada.nextDouble();
-        System.out.println("Ingrese la altura del triángulo:");
-        alto = entrada.nextDouble();
+        System.out.println("Ingrese el costo por minuto de llamada:");
+        costoMin = entrada.nextDouble();
+        System.out.println("Ingrese el número de minutos consumidos en el mes");
+        mins = entrada.nextInt();
         
-        area = (base * alto) / 2;
+        total = costoMin * mins;
         
-        System.out.println("El área del triángulo es igual a: " + area);
-        
+        System.out.println("El valor de la planilla de teléfono es de: $" 
+        + total);
     }
     
 }
